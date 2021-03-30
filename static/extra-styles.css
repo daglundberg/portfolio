@@ -1,0 +1,9 @@
+span
+{
+	opacity: 0;
+	transitin: all 0.5s ease-in;
+}
+span.visible
+{
+	opacity: 1;
+}
