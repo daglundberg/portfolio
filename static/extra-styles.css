@@ -25,12 +25,13 @@ span.visible
 	overflow-y: scroll;
 	box-sizing: border-box;
 
-	scroll-snap-type: y mandatory;
+	scroll-snap-type: y proximity;
 }
 
 section
 {
   scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .dot {
@@ -62,7 +63,7 @@ section
 
 .topmargin
 {
-	margin-top: 100px;
+	margin-top: 5vh;
 }
 
 .bottommargin
