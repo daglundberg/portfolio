@@ -11,7 +11,7 @@ for (let i = 0; i < splitText.length; i++)
 	}
 	else
 	{
-		text.innerHTML += "<span>" + splitText[i] + "</span>";
+		text.innerHTML += '<span class="invisible">' + splitText[i] + "</span>";
 	}
 
 }
@@ -21,7 +21,7 @@ let timer = setInterval(onTick, 70);
 
 function onTick()
 {
-	const span = text.querySelectorAll('span')[char];
+	const span = text.querySelectorAll('span.invisible')[char];
 	span.classList.add('visible');
 	char++;
 
@@ -53,5 +53,5 @@ function wave()
 		isRotated = true;			
 	}
 
-	setTimeout(wave, 1000);
+	setTimeout(wave, 700);
 }

@@ -1,9 +1,54 @@
-span
+span.invisible
 {
 	opacity: 0;
-	transitin: all 0.5s ease-in;
+	/*transition: all 0.2s ease-in;*/
 }
+
 span.visible
 {
 	opacity: 1;
+}
+
+.macwindow{
+  border-radius: 15px 15px 3px 3px;
+  background: #e0e0e0;
+  padding: 0; 
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dot {
+  height: 19px;
+  width: 19px;
+  border-radius: 50%;
+  margin-top: 9px;
+
+  display: inline-block;
+}
+
+.red
+{
+	margin-left: 12px;
+  	background-color: #FF3A00;
+}
+
+.yellow
+{
+	margin-left: 6px;
+  	background-color: #FFA700;
+}
+
+.green
+{
+	margin-left: 6px;
+  	background-color: #1BA104;
+}
+
+.topmargin
+{
+	margin-top: 100px;
+}
+
+.bottommargin
+{
+	margin-bottom: 50px;
 }
