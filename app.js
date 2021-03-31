@@ -1,3 +1,5 @@
+const maxSection = document.querySelectorAll('.hero').length;
+console.log("there are " + maxSection + " sections");
 var text = document.querySelector(".typed");
 var strText = text.textContent;
 var splitText = strText.split("");
@@ -54,4 +56,12 @@ function wave()
 	}
 
 	setTimeout(wave, 700);
+}
+
+//document.getElementById('btnScrollToDJ').onclick = scrollYou;
+function scrollYou(section)
+{
+	let sectionId = "section" + section;
+	console.log("srolling to: " + sectionId)
+	document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
 }

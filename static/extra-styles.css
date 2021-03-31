@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 span.invisible
 {
 	opacity: 0;
@@ -14,6 +18,19 @@ span.visible
   background: #e0e0e0;
   padding: 0; 
   box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.scrollcontainer {
+	max-height: 100vh;
+	overflow-y: scroll;
+	box-sizing: border-box;
+
+	scroll-snap-type: y mandatory;
+}
+
+section
+{
+  scroll-snap-align: start;
 }
 
 .dot {
